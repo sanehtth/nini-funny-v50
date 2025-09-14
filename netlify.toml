@@ -1,0 +1,11 @@
+﻿[build]
+  publish = "public"
+  command = "corepack enable && pnpm i"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  included_files = ["topics/**", "docs/**"]
+
+[build.environment]
+  NODE_VERSION = "20"
