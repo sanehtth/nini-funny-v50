@@ -1,17 +1,16 @@
 ﻿{
   "name": "nini-funny",
-  "version": "0.0.1",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "build": "echo \"static build - no bundling\"",
-    "dev": "netlify dev"
+    "start-static": "http-server public -p 3000",
+    "build": "echo \"static build - no bundling\""
   },
   "dependencies": {
-    "@netlify/functions": "^2.8.0",
-    "firebase-admin": "^12.5.0",
-    "sharp": "^0.33.4",
-    "yargs": "^17.7.2"
-  }
+    "@netlify/functions": "^2.8.0"
+  },
+  "devDependencies": {}
 }
