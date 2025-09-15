@@ -1,16 +1,18 @@
-﻿{
-  "name": "nini-funny",
-  "private": true,
-  "type": "module",
-  "engines": {
-    "node": ">=18"
-  },
+{
+  "name": "html-css",
+  "version": "1.0.0",
+  "description": "A template for HTML and CSS",
+  "main": "index.html",
   "scripts": {
-    "start-static": "http-server public -p 3000",
-    "build": "echo \"static build - no bundling\""
+    "start": "serve"
   },
-  "dependencies": {
-    "@netlify/functions": "^2.8.0"
-  },
-  "devDependencies": {}
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Ives van Hoorne",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
 }
